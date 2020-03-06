@@ -771,8 +771,7 @@ namespace Multiplayer.Client
         static SyncDelegates()
         {
             SyncContext mouseKeyContext = SyncContext.QueueOrder_Down | SyncContext.MapMouseCell;
-
-            SyncDelegate.Register(typeof(FloatMenuMakerMap), "<>c__DisplayClass9_0", "<GotoLocationOption>b__0").CancelIfAnyFieldNull().SetContext(mouseKeyContext);  // Goto
+            //SyncDelegate.Register(typeof(FloatMenuMakerMap), "<>c__DisplayClass9_0", "<GotoLocationOption>b__0").CancelIfAnyFieldNull().SetContext(mouseKeyContext);  // Goto
             SyncDelegate.Register(typeof(FloatMenuMakerMap), "<>c__DisplayClass5_1", "<AddHumanlikeOrders>b__0").CancelIfAnyFieldNull().SetContext(mouseKeyContext);   // Arrest
             SyncDelegate.Register(typeof(FloatMenuMakerMap), "<>c__DisplayClass5_6", "<AddHumanlikeOrders>b__4").CancelIfAnyFieldNull().SetContext(mouseKeyContext);   // Rescue
             SyncDelegate.Register(typeof(FloatMenuMakerMap), "<>c__DisplayClass5_6", "<AddHumanlikeOrders>b__5").CancelIfAnyFieldNull().SetContext(mouseKeyContext);   // Capture

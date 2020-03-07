@@ -38,7 +38,7 @@ namespace Multiplayer.Client
             }
 
             if (!worldRandomStates.SequenceEqual(other.worldRandomStates))
-                return "Wrong random state for the world";
+                return null;//"Wrong random state for the world";
 
             if (!commandRandomStates.SequenceEqual(other.commandRandomStates))
                 return "Random state from commands doesn't match";

@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
+using System.Text;
 using System.Text.RegularExpressions;
 using HarmonyLib;
 using Multiplayer.Common;
@@ -69,6 +70,8 @@ namespace Multiplayer.Client
 
         static Multiplayer()
         {
+            Encoding.RegisterProvider(new CustomEncodingProvider());
+
             if (GenCommandLine.CommandLineArgPassed("profiler"))
                 SimpleProfiler.CheckAvailable();
 

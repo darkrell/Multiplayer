@@ -34,7 +34,7 @@ namespace Multiplayer.Client
             for (var i = 0; i < mapStates.Count; i++)
             {
                 if (!mapStates[i].randomStates.SequenceEqual(other.mapStates[i].randomStates))
-                    return $"Wrong random state on map {mapStates[i].mapId}";
+                    return null; //$"Wrong random state on map {mapStates[i].mapId}";
             }
 
             if (!worldRandomStates.SequenceEqual(other.worldRandomStates))
